@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi app</title>
+    <title>Pedidos</title>
 </head>
 <body>
-    <h1>Mi app en la nube 🚀</h1>
-    <p>Versión 2</p>
 
-    <button onclick="alert('Hola como esta?!')">
-     Haz clic
-    </button ("adelante")">
-    </button>
+    <h1>📦 Sistema de pedidos</h1>
+
+    <input type="text" id="producto" placeholder="Producto">
+    <input type="number" id="cantidad" placeholder="Cantidad">
+
+    <button onclick="hacerPedido()">Enviar pedido</button>
+
+    <script>
+        function hacerPedido() {
+            let producto = document.getElementById("producto").value;
+            let cantidad = document.getElementById("cantidad").value;
+
+            alert("Pedido enviado: " + producto + " x " + cantidad);
+        }
+    </script>
+
 </body>
 </html>
